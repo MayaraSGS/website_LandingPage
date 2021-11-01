@@ -1,0 +1,138 @@
+/*
+    Universal
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --font-primary: 'Roboto', sans-serif;;
+    --font-secundary: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+/*
+    Menu Header
+*/
+
+header{
+    width: 100%;
+}
+
+.menu-header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+    /*background-color: hsla(0, 0%, 0%, 0.5);*/
+
+    width: 100%;
+    height: 10vh;
+}
+
+.img-menu{
+    margin-left: 50px;
+}
+
+.menu-link-final{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.menu-link{
+    margin-right: 20px;
+
+    color: rgb(43, 42, 42);
+    border-bottom: 2px solid rgb(179, 9, 9);
+    padding: 2px 1px 2px 1px;
+
+    font-family: var(--font-primary);
+    font-size: 1em;
+}
+
+.contato{
+    margin-right: 60px;
+}
+
+/*
+    Apresentação-nicial
+*/
+
+.tela-inicial{
+    display: grid;
+    grid-template-columns: 0.6fr 2fr 1.3fr;
+    grid-template-rows: 2.7fr;
+    gap: 14px 0px;
+    grid-template-areas: "redes-sociais apresentacao imagem-perfil";
+    
+    width: 100%;
+    height: 100vh;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-area: apresentacao;
+}
+
+.imagem-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: imagem-perfil;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    grid-area: redes-sociais;
+    margin-right: 7em;
+}
+
+.nome-apresentacao{
+    font-size: 3.5rem;
+    font-family: var(--font-secundary);
+    color: rgb(31, 30, 30);
+}
+
+.subtexto{
+    font-size: 1.3rem;
+    font-family: var(--font-secundary);
+    color: rgb(31, 30, 30);
+}
+
+h1 span{
+    color: rgb(179, 9, 9);
+}
+
+/*
+    Projetos
+*/
